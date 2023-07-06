@@ -1,0 +1,6 @@
+node_modules
+
+#dist and parcel cache is basically build folder, which we can generete it in the server
+.parcel-cache
+dist
+
