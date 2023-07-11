@@ -19,7 +19,9 @@ React.createElement("div", { id: "child 2" }, [
 //jsx (transpiled before it reaches js engine) --parcel -->bable
 //jsx => transpiled into React.createEelemnt(its js object)--> htmlElement(render)
 
-const jsxHeading = <h1>Namaste react rocket🚀</h1>;
+const jsxHeading = <h1 className="heading" tabIndex={1}>Namaste react rocket🚀</h1>;
+
+//attributes are in cameCase
 
 const p = (<p>
     loreim ele eposos cdsnjk✍️
