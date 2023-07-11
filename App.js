@@ -1,6 +1,8 @@
 import React  from "react";
 import ReactDOM from 'react-dom/client';
 
+//React.createElement() returns js object ==> HTMLElement(render)
+
 const heading = React.createElement("div", { id: "parent" }, 
 [React.createElement("div", { id: "child 1" }, [
     React.createElement("h1", {}, "This is heading one"),
@@ -12,7 +14,19 @@ React.createElement("div", { id: "child 2" }, [
 )]
 );
 
+//JSX is an HTML or XML like syntax.
+
+//jsx (transpiled before it reaches js engine) --parcel -->bable
+//jsx => transpiled into React.createEelemnt(its js object)--> htmlElement(render)
+
+const jsxHeading = <h1>Namaste react rocket🚀</h1>;
+
+const p = (<p>
+    loreim ele eposos cdsnjk✍️
+</p>)
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+root.render(jsxHeading);
 
