@@ -23,12 +23,32 @@ const jsxHeading = <h1 className="heading" tabIndex={1}>Namaste react rocket🚀
 
 //attributes are in cameCase
 
-const p = (<p>
+//React element
+const p = (
+<p>
     loreim ele eposos cdsnjk✍️
-</p>)
+</p>
+);
+
+
+// React functional component
+
+
+// Functional component uses a javascript function to create component
+const HeadingComponent = () => {
+    return <h2>Namaste React from functional component 🚀</h2>;
+};
+
+//HeadingComponent and HeadingComponent2 are same 
+const HeadingComponent2 = () => (
+     <h2>Namaste React from functional component 🚀</h2>
+);
+
+//shorthand syntax
+const HeadingComponent3 = () => <h3>This component is without return statement</h3>;
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent/>);
 
