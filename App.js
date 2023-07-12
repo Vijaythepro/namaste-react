@@ -48,7 +48,15 @@ const HeadingComponent2 = () => (
 const HeadingComponent3 = () => <h3>This component is without return statement</h3>;
 
 
+//component composition
+const FooterComponent = () => (
+    <div className="container">
+        <HeadingComponent/>
+        <h6> All rights reserved @ 2024</h6>
+    </div>
+)
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent/>);
+root.render(<FooterComponent/>);
 
